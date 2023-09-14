@@ -1,0 +1,148 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-blue{
+    background-color: rgb(20, 30, 70);
+}
+
+.border-red{
+    border-bottom: 5px solid red;
+}
+
+.big-title{
+    font-size: 4vw;
+    color: white;
+}
+
+.image-crausel{
+    background-image: url(assets/IMG-20230731-WA0049_copy_1200x630.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.image-crausel-bg{
+    /* height: 630px; */
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+}
+
+.component-2{
+    height: 150px;
+}
+
+.component-1{
+    font-size: 14px;    
+    max-height: 100px;
+    background-color: lightblue;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.slide-up {
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+}
+
+.slide-down {
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+
+@keyframes slideUp {
+    5% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideDown {
+    5% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.component-3{
+    max-height: 100px;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.slide-up-2 {
+    animation-name: slideUp2;
+    animation-duration: 1s;
+}
+
+.slide-down-2 {
+    animation-name: slideDown2;
+    animation-duration: 0.7s;
+}
+
+@keyframes slideUp2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {     
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes slideDown2 {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.content-title{
+    font-size: 1.9vw;
+}
+
+.title{
+    font-size: 3vw;
+}
+
+@media (max-width: 880px){
+    .component-1{
+        display: none;
+    
+    }
+    .component-2{
+        height: 150px;
+    }
+
+    .button-title{
+        display: none;
+    }
+   
+}
+
+@media (max-width: 767px) {
+    .logo{
+        width: 100px;
+    }
+    .title{
+        margin-top: 18px;
+        
+    }
+}
+
+@media (max-width: 575px){
+    .component-4{
+        display: none;
+    }
+
+    .component-2{
+        height: 50px;
+    }
+}
+
